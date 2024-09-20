@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+#report-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  max-width: 300px;
+  height: 140px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgb(29, 29, 29);
+  opacity: 0.4;
+  font-weight: 700;
+  color: green;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 4px;
+}
+
+#options-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  gap: 10px;
+}
+
+#room-div,
+#event-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit-button {
+  width: 80px;
+  color: green;
+  border-radius: 0;
+  border: none;
+  background-color: black;
+  opacity: 1;
+}
+
+#text-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  margin: auto;
+  padding: 30px;
+  text-align: justify;
+  max-width: 300px;
+  height: fit-content;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+#text-div h1 {
+  text-align: center;
+}
+
+#text-div p {
+  margin-top: 20px;
+}
+
+#text-div button {
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  display: block;
+  cursor: pointer;
+}
+
+#report-msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 180px;
+  height: fit-content;
+  background-color: rgb(29, 29, 29);
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 50px;
+  color: green;
+}
+
+/* #button-controls button,
+#report-container button,
+#controls-container button {
+  width: 100px;
+  margin: 5px 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#report-room,
+#report-event {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  background-color: gray;
+  width: 512px;
+} */
+
+.hide {
+  visibility: hidden !important;
+}
